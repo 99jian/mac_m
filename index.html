@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>M.A.C</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="app_icon.png">
+    <link rel="stylesheet" href="common/css/common.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Nanum+Brush+Script&family=Noto+Sans+KR&family=Roboto&display=swap" rel="stylesheet">
+    <!-- swiper 슬라이드 css-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">    
+    <script src="common/js/jquery-1.8.3.min.js"></script>
+    <!-- 호환성 -->
+    <script src="common/js/jquery-migrate-1.4.1.min.js"></script>
+    <!-- gnb js -->
+    <script src="common/js/m_gnb.js"></script> 
+        <!-- swiper js -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- map -->
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=db617ae5f0a13b98b77c9c489d364ca9"></script>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="header_inner">
+                <div class="header_box">
+                    <h1 id="logo"><a href="index.html"><img src="common/images/logo.png" alt="로고이미지"></a></h1>
+                    <span class="menu_icon"><a href="javascript:void(0);">메뉴아이콘</a></span>
+                </div>
+                <div class="menu_bg"></div>
+                <nav id="gnb">
+                    <span class="close_btn"><a href="javascript:void(0);">닫기버튼</a></span>
+                    <ul class="main_menu">
+                        <li><a href="javascript:void(0);"  class="depth">NEW</a>
+                            <ul class="sub_menu">
+                                <li><a href="">보태닉 패닉 컬렉션</a></li>
+                                <li><a href="">Cruella</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:void(0);" class="depth">BEST</a>
+                            <ul class="sub_menu">
+                                <li><a href="">베스트셀러</a></li>
+                                <li><a href="">립 TOP 20</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:void(0);" class="depth">FACE</a>
+                            <ul class="sub_menu">
+                                <li><a href="">Lip</a></li>
+                                <li><a href="">Eye</a></li>
+                                <li><a href="">Powder</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:void(0);" class="depth">브러쉬</a>
+                            <ul class="sub_menu">
+                                <li><a href="">Pro</a></li>
+                                <li><a href="">Classic</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div id="visual" class="swiper-container mySwiper1">
+            <ul class="swiper-wrapper">
+                <li class="swiper-slide"><img src="images/slide.png" alt="리사 화보이미지"></li>
+                <li class="swiper-slide"><img src="images/slide01.png" alt="나만의 립스틱화보이미지"></li>
+                <li class="swiper-slide"><img src="images/slide02.png" alt="크루엘라컬렉션이미지"></li>
+                <li class="swiper-slide"><img src="images/slide03.png" alt="포니 타로컬렉션이미지"></li>
+                <li class="swiper-slide"><img src="images/slide04.png" alt="여름한정리퀴드이미지"></li>
+                <li class="swiper-slide"><img src="images/slide05.png" alt="블랙체리화보이미지"></li>
+                <li class="swiper-slide"><img src="images/slide06.png" alt="베스트셀러 립 이미지"></li>
+            </ul>
+            <div class="swiper-pagination"></div>
+        </div>
+        <section id="container">
+            <h2 class="hidden">콘텐츠영역</h2>
+            <article class="best_seller">
+                <h3><img src="images/bs_tit.png" alt="베스트셀러 텍스트이미지"></h3>
+                <div class="bs_box swiper-container mySwiper2">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide"><a href="#"></a></li>
+                        <li class="swiper-slide"><a href="#"></a></li>
+                        <li class="swiper-slide"><a href="#"></a></li>
+                    </ul>
+                </div>
+            </article>
+            <article class="more_ct">
+                <h3><img src="images/more_tit.png" alt="머스트 해브 텍스트 이미지"></h3>
+                <div class="more_box">
+                    <h3><img src="images/more.png" alt="립스틱들고있는 리사이미지"></h3>
+                    <h4>POWDER KISS LIPSTICK</h4>
+                    <h5>나를 위한 특별한 색감의 립스틱<br>Lip tip20에서 확인하세요</h5>
+                    <a href="#">더보기</a>
+                </div>
+            </article>
+            <article class="is_ct">
+                <h3 class="is_tit"><img src="images/is_tit.png" alt="핫이슈 텍스트이미지"></h3>
+                <div class="is_box">
+                    <a href="#"><img src="images/is_main.png" alt=""></a>
+                    <iframe src="https://www.youtube.com/embed/by6WGBufOaY?rel=0&amp;autoplay=1&mute=1&amp;loop=1;playlist=영상키값" frameborder="0"></iframe>
+                </div>
+                <a href="#"><img src="images/about.png" alt=""></a>
+            </article>
+            <article class="map_ct">
+                <h3><img src="images/map.png" alt=""></h3>
+                <div id="map"></div>
+            </article>
+        </section>
+        <footer id="footer">
+            <div class="footer_inner">
+                <div class="footer_btn">
+                    <a href="#" class="location">찾아오시는길</a>
+                    <a href="#" class="pc">PC버전</a>
+                    <a href="#" class="top">TOP</a>
+                </div>
+                <div class="footer_logo"><a href="index.html"><img src="images/footerlogo.png" alt="푸터로고"></a></div>
+                <div class="footer_address">
+                    <address>
+                        이엘씨에이한국(유)대표 SLAVIN PAUL<br>서울시 강남구 강남대로 382메리츠타워, 06232<br>고객관리지원팀: 02-6971-3291
+                    </address>
+                </div>
+                <div class="footer_copy">
+                    <p>© MAKE-UP ART COSMETICS.<br>ALL WORLDWIDE RIGHTS RESERVED.</p>
+                </div>
+                
+            </div>
+        </footer>
+    </div>
+    
+    <!-- swiper css 1개 +js 2개 + 마크업 네이밍 -->
+    <script>
+        /* visual slide */
+        var swiper = new Swiper(".mySwiper1", {
+          effect: "coverflow",
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: "auto",
+          initialSlide: 4,
+          coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+          },
+        });
+
+        /* best seller */
+        var swiper = new Swiper(".mySwiper2", {
+        pagination: {
+          el: ".swiper-pagination",
+          dynamicBullets: true,
+        },
+      });
+
+        /* map */
+        var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+            mapOption = { 
+                center: new kakao.maps.LatLng(37.49726664557109, 127.02868581142769), // 지도의 중심좌표
+                level: 3 // 지도의 확대 레벨
+            };
+
+        var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+        /* map 마커생성 */
+
+        // 마커가 표시될 위치입니다 
+        var markerPosition  = new kakao.maps.LatLng(37.49726664557109, 127.02868581142769); 
+
+        // 마커를 생성합니다
+        var marker = new kakao.maps.Marker({
+            position: markerPosition
+        });
+
+        // 마커가 지도 위에 표시되도록 설정합니다
+        marker.setMap(map);
+
+        // 아래 코드는 지도 위의 마커를 제거하는 코드입니다
+        // marker.setMap(null); 
+    </script>
+</body>
+</html>
